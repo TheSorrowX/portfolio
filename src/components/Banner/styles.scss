@@ -1,0 +1,40 @@
+@import '../../styles/styles.scss';
+
+.banner{
+    position: relative;
+    background: url('../../assets/bg.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+
+    .banner--container{
+
+    position: relative;
+    background-color:$color-banner;
+    width: 100%;
+    height: inherit;
+
+    }
+    
+    .banner__content{
+        color:#fff;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__text{
+        font-size: 22px;
+        line-height: 20pt;
+    }
+
+
+    .banner__content--highlight{
+       color:$color-primary; 
+    }
+    
+}
