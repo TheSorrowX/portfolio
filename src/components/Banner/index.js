@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Button from '../Button';
 import './styles.scss';
 function Banner() {
     return (
@@ -10,6 +12,7 @@ function Banner() {
                     <br/>
                     I'm a full-stack web developer.
                     </div>
+                        <Button buttonStyle='btn--outline' buttonSize='btn--large'>View my work</Button>
                 </div>
             </div>
         </div>
