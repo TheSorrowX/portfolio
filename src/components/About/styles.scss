@@ -1,0 +1,37 @@
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    color: #fff;
+
+    .about__title {
+        flex: 1;
+        text-align: center;
+        padding-top:60px;
+        font-size: 25px;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    .about__content {
+        flex: 2;
+        width: 50%;
+    }
+
+
+}
