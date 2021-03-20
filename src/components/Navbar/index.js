@@ -19,7 +19,7 @@ function Navbar() {
             <ul className={clicked ? 'nav__menu active' : 'nav__menu'}>
                 <li className='nav__menu--item'><a className='nav__menu--link' href="/">Home</a></li>
                 <li className='nav__menu--item'><a className='nav__menu--link' href="/">About</a></li>
-                <li className='nav__menu--item'><a className='nav__menu--link' href="/">Services</a></li>
+                <li className='nav__menu--item'><a className='nav__menu--link' href="/">Projects</a></li>
                 <li className='nav__menu--item'><a className='nav__menu--link' href="/">Contact</a></li>
             </ul>
             
