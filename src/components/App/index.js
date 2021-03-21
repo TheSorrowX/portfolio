@@ -13,15 +13,17 @@ function App() {
     client.getEntries()
     .then((res)  =>{
       console.log(res);
+      setProjects(res.items);
     })
-  });
+    .catch(console.error)
+  },[]);
 
   return (
     <div className="App">
       <Navbar/>
       <Banner/>
       <About/>
-      <Projects/>
+      <Projects projects={projects}/>
     </div>
   );
 }

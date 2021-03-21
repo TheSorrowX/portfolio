@@ -1,7 +1,8 @@
 import React from 'react'
 import './styles.scss'
 import Card from '../Card';
-function Projects() {
+function Projects(props) {
+    let {projects} = props;
     return (
         <div className="projects">
             
@@ -9,13 +10,17 @@ function Projects() {
                 Projects
             </div>
             <div className="projects__content">
-                <div className="projects__content-card card box1"><Card/></div>
-                <div className="projects__content-card card box1">one</div>
+                {
+                    projects.map( (project,index) => (
+                      <div key={index} className="projects__content-card"><Card project={project}/></div>
+                    ))
+                }
+{/*                 <div className="projects__content-card card box1">one</div>
                 <div className="projects__content-card card box1">one</div>
                 <div className="projects__content-card card box1">one</div>
                 <div className="projects__content-card card box2">one</div>
                 <div className="projects__content-card card box2">one</div>
-                <div className="projects__content-card card box2">one</div>
+                <div className="projects__content-card card box2">one</div> */}
 
             </div>
         </div>

@@ -1,11 +1,29 @@
+@import '../../styles/styles.scss';
+
 .card {
     position: relative;
-    margin: 0.5rem 0 1rem 0;
-    background-color: #fff;
-    transition: box-shadow .25s;
-    border-radius: 2px;
+    //margin: 0.5rem 0 1rem 0;
+    margin: 0 auto;
+    background-color: $color-card-bg;
+    //box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+    //transition: box-shadow .25s;
+    border-radius: 4px;
     color: #000;
+    transition: all .2s ease-in;
+    width: 80%;
+    padding:15px;
+    .card__title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
+    .card__img {
+        img {
+            border-radius: 4px;
+            max-width: 100%;
+        }
+    }
 
     .card__content {
 
@@ -25,6 +43,29 @@
                 }
             }
         }
+
+        .card__content-links{
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+
+            a{
+                padding:10px;
+            }
+        }
+    }
+    
+    .webpage {
+        text-decoration: none;
+        color: $color-primary;
     }
 
+    .github {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgba(5,5,5,0.4);
+    }
 }

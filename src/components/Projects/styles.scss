@@ -41,26 +41,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        .card {
-            margin: 25px;
-            
-        }
+    
 
-        .box1 {
-            background-color: red;
-        }
-
-        .box2 {
-            background-color: orange;
-        }
-
-        .box3 {
-            background-color: purple;
-        }
-
-        .box4 {
-            background-color: grey;
-        }
 
 
         .projects__content-card {
@@ -69,6 +51,7 @@
             justify-content: center;
             flex-direction: column;
             height:auto;
+            margin:25px;
         }
     }
 }
