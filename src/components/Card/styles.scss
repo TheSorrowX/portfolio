@@ -19,6 +19,8 @@
     }
 
     .card__img {
+        margin-top:15px;
+        margin-bottom: 10px;
         img {
             border-radius: 4px;
             max-width: 100%;
@@ -26,16 +28,16 @@
     }
 
     .card__content {
-
+        margin: 0 auto;
         .card__content-icons {
-
+          
             .icon {
                 font-size: 0.9rem;
                 display: inline-flex;
                 background: #D8D8D8;
                 border-radius: 3px;
                 margin-right: 5px;
-                margin-bottom: 15px;
+                //margin-bottom: 15px;
 
                 span {
                     border-radius: 5px;
@@ -46,11 +48,11 @@
 
         .card__content-links{
             max-width: 500px;
-            margin: 0 auto;
-            text-align: left;
+            margin: 15px auto 0px auto;
+           
 
             a{
-                padding:10px;
+                padding-right:10px;
             }
         }
     }
@@ -58,6 +60,11 @@
     .webpage {
         text-decoration: none;
         color: $color-primary;
+        
+        &:hover{
+            background-color: #fff;
+        }
+    
     }
 
     .github {
